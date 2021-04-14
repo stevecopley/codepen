@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #369;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+p {
+  padding: 0.3em 1em;
+  background: #fff;
+  border-radius: 1em;
+  border: 5px solid #000;
+  font-size: 40px;
+  font-family: sans-serif;
+}
