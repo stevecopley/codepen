@@ -14,34 +14,45 @@
         $title = 'Jotted Demo '.$id.' - '.$demos[$id]['title'];
         $type = $demos[$id]['type'];
 
-        if( strpos( $type, 'html' ) !== false ) $htmlFile = 'demos/demo'.$id.'.html';
-        if( strpos( $type, 'css' )  !== false ) $cssFile  = 'demos/demo'.$id.'.css';
-        if( strpos( $type, 'js' )   !== false ) $jsFile   = 'demos/demo'.$id.'.js';
+        $htmlFile = strpos( $type, 'html' ) !== false ? 'demos/demo'.$id.'.html' : null;
+        $cssFile  = strpos( $type, 'css' )  !== false ? 'demos/demo'.$id.'.css'  : null;
+        $jsFile   = strpos( $type, 'js' )   !== false ? 'demos/demo'.$id.'.js'   : null;
     }
 
-    $theme    = 'dark';
-    $height   = '80vh';
-    $localCSS = 'css/styles.css';
-
-    include_once '../top.php';
 ?>
 
-<header>
-    <h1><?= $title ?></h1>
+<!doctype html>
 
-    <nav id="mainnav">
-        <ul>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CodePen Demos</title>
+
+        <link rel="stylesheet" href="../codepen.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="../codepen.js"></script>
+    </head>
+
+    <body onload="startJotted( '<?= $htmlFile ?>', '<?= $cssFile ?>', '<?= $jsFile ?>' );">
+
+        <header>
+            <h1><?= $title ?></h1>
+
+            <nav id="mainnav">
+                <ul>
 <?php
     foreach( $demos as $id => $demo ) {
         echo '<li><a href="index.php?id='.$id.'" title="'.$demo['title'].'">Demo '.$id.'</a></li>';
     }
 ?>
-        </ul>
-    </nav>
-</header>
+                </ul>
+            </nav>
+        </header>
 
-<div id="editor"></div>
+        <div id="editor"></div>
 
-<?php
-    include_once '../bottom.php';
-?>
+    </body>
+
+</html>

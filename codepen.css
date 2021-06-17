@@ -1,0 +1,12 @@
+@import "lib/codemirror/lib/codemirror.css";
+@import "lib/codemirror/addon/scroll/simplescrollbars.css";
+@import "lib/jotted/jotted.min.css";
+@import "lib/jotted/jotted-custom.css";
+@import "css/waimea-dark.css";
+@import "css/dark.css";
+
+#editor {
+    min-height:80vh; 
+    height:80vh;
+}
+
