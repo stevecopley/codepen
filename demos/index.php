@@ -35,7 +35,7 @@
         <script src="../codepen.js"></script>
     </head>
 
-    <body onload="startJotted( '<?= $htmlFile ?>', '<?= $cssFile ?>', '<?= $jsFile ?>' );">
+    <body onload="startCodePen( {html:'<?= $htmlFile ?>', css:'<?= $cssFile ?>', js:'<?= $jsFile ?>'} );">
 
         <header>
             <h1><?= $title ?></h1>

@@ -1,6 +1,6 @@
 .jotted {
-    --dark-border: #333;
-    --dark-back: #111;
+    --dark-border: #141a1d;
+    --dark-back: #263238;
     --dark-text: #ccc;
 }
 
@@ -23,9 +23,4 @@
 .jotted-plugin-pen-expander,
 .jotted-pane-result .jotted-plugin-pen-expander {
     border-color: var(--dark-border);
-}
-
-.CodeMirror-scrollbar-filler,
-.CodeMirror-gutter-filler {
-    background-color: var(--dark-back);
 }

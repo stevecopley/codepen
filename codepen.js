@@ -38,13 +38,13 @@ var loadPlugins = function() {
 }
 
 
-function startCodePen( htmlFile=null, cssFile=null, jsFile=null ) {
+function startCodePen( { html=null, css=null, js=null, theme='dark' } = {} ) {
 
     var files = [];
-    if( htmlFile ) files.push( { type: 'html', url: htmlFile } );
-    else           files.push( { type: 'html', content: '<h1>Hello World!</h1>' } );        
-    if( cssFile ) files.push( { type: 'css', url: cssFile } );
-    if( jsFile )  files.push( { type: 'js',  url: jsFile  } );
+    if( html ) files.push( { type: 'html', url: html } );
+    else       files.push( { type: 'html', content: '<h1>Hello World!</h1>\n\n<p>This is HTML</p>' } );        
+    if( css )  files.push( { type: 'css',  url: css } );
+    if( js )   files.push( { type: 'js',   url: js  } );
 
     const params = {
         files: files,
@@ -52,7 +52,7 @@ function startCodePen( htmlFile=null, cssFile=null, jsFile=null ) {
             {
                 name: 'codemirror',
                 options: {
-                    theme: 'waimea-dark',
+                    theme: 'syntax-' + theme,
                     tabSize: 2,
                     lineWrapping: false,
                     lineNumbers: true,

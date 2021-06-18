@@ -13,7 +13,7 @@ The following files need to be linked in your HTML:
 <script src="codepen.js"></script>
 ```
 
-Withon your document, you need an empty `<div>` for the editor with the id **editor**:
+Within your document, you need an empty `<div>` for the editor with the id **editor**:
 
 ```html
 <div id="editor"></div>'
@@ -28,6 +28,20 @@ Withon your document, you need an empty `<div>` for the editor with the id **edi
 You can optionally pass the URL / filenames of an HTML, CSS and JS file to `startCodePen()`:
 
 ```html
-<body onload="startCodePen( 'demo.html', 'demo.css' );">
+<body onload="startCodePen( {html:'demo.html', css:'demo.css'} );">
 ```
+
+By default the codepen will have dark frames / borders and use a dark syntax theme. However you can override this with an additional stylesheet:
+
+```html
+<link rel="stylesheet" href="codepen.css">
+<link rel="stylesheet" href="theme/light.css">
+```
+
+And passing the value 'light' as a theme parameter:
+
+```html
+<body onload="startCodePen( {theme:'light'} );">
+```
+
 
