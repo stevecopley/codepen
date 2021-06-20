@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 
 .jotted {
@@ -8,8 +8,8 @@
 
 .CodeMirror {
     font-size: 15px;
-    line-height: 1.2;
-    font-family: 'Fira Mono', monospace;
+    line-height: 1.1;
+    font-family: 'Fira Code', monospace;
 }
 
 
