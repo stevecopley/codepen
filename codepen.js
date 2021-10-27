@@ -18,6 +18,18 @@ function loadScript( url, callback=null )
 }
 
 
+function loadStylesheet( url )
+{    
+    var iframe = document.getElementsByTagName( 'iframe' )[0];
+    var link = document.createElement( 'link' );
+    link.href = base + '/' + url; 
+    link.rel  = 'stylesheet'; 
+    link.type = 'text/css'; 
+
+    iframe.document.head.appendChild( link );
+}
+
+
 var loadPlugins = function() {
     loadScript( 'lib/codemirror/addon/edit/matchbrackets.js' );
     loadScript( 'lib/codemirror/addon/edit/closebrackets.js' );
@@ -69,7 +81,9 @@ function startCodePen( { html=null, css=null, js=null, theme='dark' } = {} ) {
         ]
     };
 
-    new Jotted( document.querySelector( '#editor' ), params );    
+    new Jotted( document.querySelector( '#editor' ), params );   
+
+    // loadStylesheet( 'theme/base.css' );
 }
 
 

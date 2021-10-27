@@ -95,13 +95,13 @@
 .jotted-plugin-pen.jotted-has-html.jotted-has-css .jotted-pane-html,
 .jotted-plugin-pen.jotted-has-html.jotted-has-js  .jotted-pane-html,
 .jotted-plugin-pen.jotted-has-css.jotted-has-js   .jotted-pane-js {
-    height: 40%;
+    height: 50%;
 }
 
 .jotted-plugin-pen.jotted-has-html.jotted-has-css .jotted-pane-css,
 .jotted-plugin-pen.jotted-has-css.jotted-has-js   .jotted-pane-css,
 .jotted-plugin-pen.jotted-has-html.jotted-has-js  .jotted-pane-js {
-    height: 60%;
+    height: 50%;
 }
 
 .jotted-plugin-pen.jotted-has-html.jotted-has-css.jotted-has-js .jotted-pane-html,
