@@ -4,7 +4,12 @@ A CodePen-style code editor / previewer
 
 Based on **Jotted** [https://github.com/ghinda/jotted](https://github.com/ghinda/jotted) with layout and styling tweaks
 
+Demo here: https://stevecopley.github.io/codepen/
+
 The code editor used is **CodeMirror** [https://github.com/codemirror/CodeMirror](https://github.com/codemirror/CodeMirror)
+
+
+## Usage
 
 The following files need to be linked in your HTML:
 
