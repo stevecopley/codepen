@@ -50,7 +50,7 @@ var loadPlugins = function() {
 }
 
 
-function startCodePen( { html=null, css=null, js=null, theme='dark' } = {} ) {
+function startCodePen( { div='editor', html=null, css=null, js=null, theme='dark' } = {} ) {
 
     var files = [];
     if( html ) files.push( { type: 'html', url: html } );
@@ -81,7 +81,7 @@ function startCodePen( { html=null, css=null, js=null, theme='dark' } = {} ) {
         ]
     };
 
-    new Jotted( document.querySelector( '#editor' ), params );   
+    new Jotted( document.getElementById( div ), params );   
 
     // loadStylesheet( 'theme/base.css' );
 }

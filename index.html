@@ -4,15 +4,36 @@
 
     <head>
         <meta charset="utf-8">
+
         <title>CodePen Demo</title>
+        
         <link rel="stylesheet" href="codepen.css">
         <link rel="stylesheet" href="theme/light.css">
+        
+        <style>
+            html {
+                background: #263238;
+                color: white;
+                padding: 0 1rem;
+                font-family: sans-serif;
+                font-size: 18px;
+            }
+        </style>
+
         <script src="codepen.js"></script>
     </head>
 
-    <body onload="startCodePen( {html:'demo/demo.html', css:'demo/demo.css', js:'demo/demo.js', theme:'light'} );">
+    <body onload="startCodePen( {
+                 html: 'demo/demo.html', 
+                  css: 'demo/demo.css', 
+                   js: 'demo/demo.js', 
+                theme: 'light'
+            } );">
+
         <h1>CodePen Demo</h1>
+
         <div id="editor"></div>
+    
     </body>
 
 </html>

@@ -1,8 +1,10 @@
 @import "lib/codemirror/lib/codemirror.css";
 @import "lib/codemirror/theme/base16-light.css";
 @import "lib/codemirror/addon/scroll/simplescrollbars.css";
+
 @import "lib/jotted/jotted.min.css";
 @import "lib/jotted/jotted-custom.css";
+
 @import "theme/dark.css";
 @import "theme/syntax-light.css";
 @import "theme/syntax-dark.css";
